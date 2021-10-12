@@ -19,8 +19,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-
 Route::get('/', function () {
 	return view('home', [
 		"title" => "Home"
@@ -28,6 +26,7 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
+	// view ke about
 	return view('about', [
 		"title" => "About"
 	]);
